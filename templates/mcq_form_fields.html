@@ -1,0 +1,35 @@
+<style>
+    label {
+        display: block;
+        margin-bottom: 5px; /* Space between label and input/select */
+    }
+
+    input, select {
+        display: block;
+        width: 100%; /* Ensure input and select elements take up full width */
+        margin-bottom: 15px; /* Space between each input/select field */
+    }
+</style>
+
+
+<label for="num_questions_text">Number of MCQs:</label>
+<input type="number" id="num_questions_text" name="num_questions" min="1" max="50" value="3" required>
+
+<label for="difficulty_level_text">Difficulty Level:</label>
+<select id="difficulty_level_text" name="difficulty_level">
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+</select>
+
+<label for="include_topics_text">Include Topics (comma-separated):</label>
+<input type="text" id="include_topics_text" name="include_topics" placeholder="e.g., physics, chemistry">
+
+<label for="exclude_topics_text">Exclude Topics (comma-separated):</label>
+<input type="text" id="exclude_topics_text" name="exclude_topics" placeholder="e.g., biology">
+
+<label for="question_format_text">Question Format:</label>
+<select id="question_format_text" name="question_format">
+    <option value="mcq">Multiple Choice</option>
+    <option value="true_false">True/False</option>
+</select>
